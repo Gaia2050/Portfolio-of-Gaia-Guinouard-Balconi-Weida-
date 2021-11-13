@@ -1,12 +1,13 @@
 :root {
 --header-color: #059c889a;
---bio-color: #05744f81;
+--bio-color: #6d2e23bd;
 --background-color: #f0f0f0;
---experience-color: #3a4959;
+--experience-color: #3a4959a9;
 --body-of-work-color: #c4a0ae;
 --contact-info-color:  #c5cdcd;
 --background-color: #f5e5e5;
---text-color: #000000;
+--border-color: #000000;
+--text-color: #FFFFFF;
 }
 
 *{
@@ -17,12 +18,13 @@
 
 body {
     font-family: Helvetica, Arial, Helvetica, sans-serif;
-    background-color: var(--background-color);
+    background-image: url("../images/background-image.jpg");
+
 }
 
 /* header and nav  */
+/* background-color: var(--header-color);  */
 header {
-    background-color: var(--header-color);
     padding: 25px 35px;
     display: flex;
     justify-content: space-between;
@@ -30,22 +32,26 @@ header {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    background-image: url("../images/background-image.jpg");
     background-size: cover;
     background-position: 80%;
     z-index: 9999;
+    
+    </header>
+    
 }
 
 header h1 {
     font-weight: bold;
     margin: 7px 0;
     font-size: 30px;
-    color: var(--text-color);
+    color: var(--border-color);
     align-items: center;
     padding: 15px, 20px;
  }
 
  header a {
-     color: var(--text-color);
+     color: var(--border-color);
  }
 /* end header  */
 
@@ -94,13 +100,18 @@ header nav ul li a:hover {
  img {
      max-width: 100%;
      max-height: 100%;
+     margin-top: 99px;
+    border: solid;
  } 
 .me {
-    height: auto;
-    width: 300px;
+    height: 500px;
+    width: 500px;
     float: right;
     clear: bottom;
+    margin-top: 50px;
+    margin-right: 50px;
 }
+
 
 /* end image of me  */
 
@@ -115,9 +126,12 @@ header nav ul li a:hover {
     float: left;
     font-size: 20px;
     text-align: left;
+    color: var(--text-color);
     border: solid;
+    border-color: var(--border-color);
     flex-direction: column;
     margin-top: 150px;
+    margin-left: 200px;
 } 
 
 .div-bio-form {
@@ -125,14 +139,44 @@ header nav ul li a:hover {
     bottom: 0;
     right: 0;
     text-align: justify;
+    
 }
 
-.section-title p {
-    text-align: left;
+.section-title  {
+    text-align: center;
 }
 
 h2 {
-    text-align: left;
+    text-align: center;
+}
+/* end bio  */
+
+/* begin experience  */
+
+.experience-exp {
+    background-color: var(--experience-color);    
+} 
+
+.pt-2 {
+    font-size: 20px;
+    color: var(--text-color);
+    font-style: bold;
+    text-align: center;
+    Border: solid;
+    border-color: var(--border-color);
+    flex-direction: column;
+    margin-top: 933px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 19px 0 19px 0;
+    background-color: var(--experience-color)
 }
 
+.exp {
+    font-size: 20px;
+    font-weight: 550;
+}
 
+.section-title {
+    margin-bottom: 15px;
+}
