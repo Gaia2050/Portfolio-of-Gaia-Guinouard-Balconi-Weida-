@@ -1,6 +1,6 @@
 :root {
 --header-color: #059c889a;
---bio-color: #5e1f25;
+--bio-color: #05744f81;
 --background-color: #f0f0f0;
 --experience-color: #3a4959;
 --body-of-work-color: #c4a0ae;
@@ -96,19 +96,20 @@ header nav ul li a:hover {
      max-height: 100%;
  } 
 .me {
-    height: 500px;
-    width: 500px;
+    height: auto;
+    width: 300px;
     float: right;
+    clear: bottom;
 }
 
 /* end image of me  */
 
 /* begin bio  */
 
-#bio-pt-1 {
-    flex-wrap: wrap;
-    background-color: var(--bio);
+.bio-form {
+    background-color: var(--bio-color); 
 }
+
 
 .pt-1 {
     float: left;
@@ -116,6 +117,7 @@ header nav ul li a:hover {
     text-align: left;
     border: solid;
     flex-direction: column;
+    margin-top: 150px;
 } 
 
 .div-bio-form {
