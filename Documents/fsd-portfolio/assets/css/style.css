@@ -189,7 +189,7 @@ h2 {
     /* justify-content: center; */
     /* align-items: center; */
     background-color: var(--body-of-work-color);
-    margin-top: 400px;
+    margin-top: 300px;
     margin-left: 400px;
     margin-right: 400px;
     margin-bottom: 1200px;
@@ -198,7 +198,9 @@ h2 {
     flex-wrap: wrap;
     color: var(--text-color);
     border: solid;
-    border-color: var(--border-color)
+    border-color: var(--border-color);
+    padding: 15px 0 0 0;
+    
 }
 
 .pt-3 h2 {
@@ -207,9 +209,10 @@ h2 {
 }
 
 .run-buddy {
-    max-height: 300px;
-    max-width: 300px;
-    margin-bottom: 400px;
+    height: 300px;
+    width: 300px;
+    /* display: flex; */
+    /* flex-direction: row; */
 }
 
 .run-buddy h3 a {
@@ -218,20 +221,51 @@ h2 {
 }
 
 .app {
-    max-height: 300px;
-    max-width: 300px;
-    margin-bottom: 1400px;
-    margin-right: 250px;
+    height: 300px;
+    width: 300px;
+    /* display: flex; */
+    /* flex-direction: row; */
 }
 
-.app section title {
+.app h3 {
     font-size: 20px;
     text-align: center;
 }
 
 .business {
-    max-height: 300px;
-    max-width: 300px;
-    margin-top: 50px;
-    margin-right: 300px;
+    height: 300px;
+    width: 300px;
+}
+.business h3 {
+    font-size: 20px;
+    text-align:center
+}
+
+.work {
+    height: 300px;
+    width: 300px;
+}
+
+.work h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* .rub-buddy .app .pair-1 { */
+    /* display:flex; */
+    /* flex-direction: row; */
+/* } */
+
+.pt-3, .pair-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.pt-3, .pair-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px;
 }
