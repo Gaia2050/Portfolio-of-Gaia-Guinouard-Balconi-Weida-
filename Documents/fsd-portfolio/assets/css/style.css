@@ -4,7 +4,7 @@
     --background-color: #f0f0f0;
     --experience-color: #3a4959a9;
     --body-of-work-color: #c4a0ae9c;
-    --contact-info-color: #c5cdcd;
+    --contact-info-color: #61140a7c;
     --background-color: #f5e5e5;
     --border-color: #000000;
     --text-color: #FFFFFF;
@@ -185,9 +185,6 @@ h2 {
 /* begin body of work  */
 
 .pt-3 {
-    /* justify-content: space-around; */
-    /* justify-content: center; */
-    /* align-items: center; */
     background-color: var(--body-of-work-color);
     margin-top: 300px;
     margin-left: 400px;
@@ -197,10 +194,10 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
     color: var(--text-color);
-    border: solid;
+    /* border: solid; */
     border-color: var(--border-color);
     padding: 15px 0 0 0;
-    
+    justify-content: space-evenly;
 }
 
 .pt-3 h2 {
@@ -211,8 +208,6 @@ h2 {
 .run-buddy {
     height: 300px;
     width: 300px;
-    /* display: flex; */
-    /* flex-direction: row; */
 }
 
 .run-buddy h3 a {
@@ -223,8 +218,6 @@ h2 {
 .app {
     height: 300px;
     width: 300px;
-    /* display: flex; */
-    /* flex-direction: row; */
 }
 
 .app h3 {
@@ -236,9 +229,10 @@ h2 {
     height: 300px;
     width: 300px;
 }
+
 .business h3 {
     font-size: 20px;
-    text-align:center
+    text-align: center
 }
 
 .work {
@@ -250,11 +244,6 @@ h2 {
     font-size: 20px;
     text-align: center;
 }
-
-/* .rub-buddy .app .pair-1 { */
-    /* display:flex; */
-    /* flex-direction: row; */
-/* } */
 
 .pt-3, .pair-1 {
     display: flex;
@@ -268,4 +257,76 @@ h2 {
     flex-direction: row;
     justify-content: center;
     padding-bottom: 30px;
+}
+
+/* end body of work  */
+
+/* begin contact information  */
+
+.pt-4 {
+    background-color: var(--contact-info-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 0 0 200px 0;
+    margin:0 0 0 0;
+    font-size: 20px;
+}
+
+/* end contact  */
+
+/* media queries begin  */
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+    .pt-1 {
+        flex: 0 70%;
+        justify-content: left;
+        justify-content: normal;
+    }
+
+    img {
+        justify-content: normal;
+        padding: 0 30px 100px 0;
+        border: none;
+        float: right;
+    }
+
+    .body-of-work {
+        
+    }
+
+    .pt-3 {
+        justify-content: center;
+        align-items: centerS;
+        flex-grow: ;
+    }
+
+    .body {
+        justify-content: center;
+    }
+
 }
