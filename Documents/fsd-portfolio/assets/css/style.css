@@ -184,21 +184,39 @@ h2 {
 
 /* begin body of work  */
 
+    
+
 .pt-3 {
     background-color: var(--body-of-work-color);
-    margin-top: 300px;
+    /* margin: 300px 400px 400px 1200px; */
+    /* margin-top: 300px;
     margin-left: 400px;
     margin-right: 400px;
-    margin-bottom: 1200px;
+    margin-bottom: 1200px; */
+    width: 300px;
+    border: 300px;  
+    margin: 200px; 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     color: var(--text-color);
-    /* border: solid; */
+    border: solid;
     border-color: var(--border-color);
     padding: 15px 0 0 0;
     justify-content: space-evenly;
 }
+
+.pt-3, .body-of-work {
+    position: relative;
+    top: -80px;
+    bottom: -425px;
+    right: -415px;
+}
+
+.pt3, .body-of-work {
+    background-size: 500px;
+}
+
 
 .pt-3 h2 {
     font-style: bold;
