@@ -48,6 +48,9 @@ header h1 {
     color: var(--border-color);
     align-items: center;
     padding: 15px, 20px;
+    border: 5px solid;
+    border-color: var(--border-color);
+    
 }
 
 header a {
@@ -77,6 +80,10 @@ header nav ul li {
     align-items: center;
     font-weight: bold;
     font-size: 25px;
+    border: 5px solid;
+    border-color: var(--border-color);
+    border-style: double;
+    border-radius: 50%;
 }
 
 nav {
@@ -103,7 +110,9 @@ img {
     max-width: 100%;
     max-height: 100%;
     margin-top: 99px;
-    border: solid;
+    border: 5px solid;
+    border-color: var(--border-color);
+    border-style: double;
 }
 
 .me {
@@ -128,11 +137,13 @@ img {
     font-size: 20px;
     text-align: left;
     color: var(--text-color);
-    border: solid;
+    border: 5px solid;
     border-color: var(--border-color);
+    border-style: double;
     flex-direction: column;
     margin-top: 150px;
     margin-left: 200px;
+    justify-content: space-evenly;
 }
 
 .div-bio-form {
@@ -163,7 +174,8 @@ h2 {
     color: var(--text-color);
     font-style: bold;
     text-align: center;
-    Border: solid;
+    Border: 5px solid;
+    border-style: double;
     border-color: var(--border-color);
     flex-direction: column;
     margin-top: 1200px;
@@ -184,7 +196,7 @@ h2 {
 
 .pt-2 {
     position: relative;
-    top: -100px;
+    top: -93px;
 }
 
 /* end experience  */
@@ -207,10 +219,11 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     color: var(--text-color);
-    border: solid;
-    border-color: var(--border-color);
     padding: 15px 0 0 0;
     justify-content: space-evenly;
+    border: 5px solid;
+    border-color: var(--border-color);
+    border-style: double;
 }
 
 .pt-3 h2 {
@@ -231,7 +244,7 @@ h2 {
     background-size: contain;
     width: 750px;
     height:750px;
-    border: 2px solid;
+    /* border: 2px solid; */
     color: var(--body-of-work-color);
     resize: both;
     overflow: auto;
@@ -319,6 +332,15 @@ h2 {
     padding: 0 0 200px 0;
     margin:0 0 0 0;
     font-size: 20px;
+    border: 5px solid;
+    border-color: var(--border-color);
+    border-style: double;
+    
+}
+
+.pt-4, .contact-information {
+    position: relative;
+    bottom: -88px;
 }
 
 /* end contact  */
