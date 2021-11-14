@@ -33,11 +33,13 @@ header {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: url("../images/background-image.jpg");
+    /* background-image: url(../images/2ndbackground-image.jpg);  */
+    /* background-image: url("../images/background-image.jpg");  */
     background-size: cover;
     background-position: 80%;
     z-index: 9999;
 }
+
 
 header h1 {
     font-weight: bold;
@@ -180,6 +182,11 @@ h2 {
     margin-bottom: 15px;
 }
 
+.pt-2 {
+    position: relative;
+    top: -100px;
+}
+
 /* end experience  */
 
 /* begin body of work  */
@@ -206,22 +213,35 @@ h2 {
     justify-content: space-evenly;
 }
 
+.pt-3 h2 {
+    font-style: bold;
+    text-align: center;
+    color: var(--text-color);
+}
+
 .pt-3, .body-of-work {
     position: relative;
     top: -80px;
     bottom: -425px;
-    right: -415px;
+    right: -170px;
+}
+/* expirement in resizing  */
+.pt-3 {
+    background-color: var(--body-of-work-color);
+    background-size: contain;
+    width: 750px;
+    height:750px;
+    border: 2px solid;
+    color: var(--body-of-work-color);
+    resize: both;
+    overflow: auto;
 }
 
-.pt3, .body-of-work {
-    background-size: 500px;
-}
 
-
-.pt-3 h2 {
+/* .pt-3 h2 {
     font-style: bold;
     text-align: center;
-}
+} */
 
 .run-buddy {
     height: 300px;
@@ -231,7 +251,15 @@ h2 {
 .run-buddy h3 a {
     font-size: 20px;
     text-align: center;
+    color: var(--text-color)
 }
+
+.run-buddy, .work {
+    position: relative;
+    top: -15px; 
+}
+
+
 
 .app {
     height: 300px;
@@ -241,6 +269,7 @@ h2 {
 .app h3 {
     font-size: 20px;
     text-align: center;
+    color: var(--text-color)
 }
 
 .business {
@@ -250,7 +279,8 @@ h2 {
 
 .business h3 {
     font-size: 20px;
-    text-align: center
+    text-align: center;
+    color: var(--text-color);
 }
 
 .work {
@@ -261,6 +291,7 @@ h2 {
 .work h3 {
     font-size: 20px;
     text-align: center;
+    color: var(--text-color);
 }
 
 .pt-3, .pair-1 {
@@ -333,14 +364,10 @@ h2 {
         float: right;
     }
 
-    .body-of-work {
-        
-    }
 
     .pt-3 {
         justify-content: center;
-        align-items: centerS;
-        flex-grow: ;
+        align-items: center;
     }
 
     .body {
