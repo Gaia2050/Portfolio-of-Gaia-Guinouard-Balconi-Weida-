@@ -1,18 +1,39 @@
+// Game states 
+// win - player robot has defeated all enemy-robots 
+  // *fiht all enemy-robots 
+    // *defeat each enemy-robot 
+    // "lose" - player robots health is zero or less 
 var playerName = window.prompt("What is your robot's name?");
 
 var playerHealth = 100;
 
 var playerAttack = 10;
 
-var enemyName = "Roborto";
+var playerMoney = 10;
+
+var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
+
 
 var enemyHealth = 50;
 
 var enemyAttack = 12;
 
-var playerMoney = 10;
+console.log(enemyNames);
+console.log(enemyNames[0]);
+console.log(enemyNames[1]);
+console.log(enemyNames[2]); 
+console.log(enemyNames.length);
 
-var fight = function () {
+for(var i = 0; i < enemyNames.length; i++) {
+  console.log(enemyNames[i]);
+  console.log(i);
+  console.log(enemyNames[i] = " is at " + i + " index");
+}
+
+
+
+
+var fight = function (enemyName) {
   // alert player thst they are starting round 
   window.alert("Welcome to Robot Gladiators!");
 
@@ -24,22 +45,22 @@ var fight = function () {
     enemyHealth = enemyHealth - playerAttack;
     // log a resulting message to the console so we know that it worked. 
     console.log(
-      playerName + " attacked " + enemyName + ". " + enemyName + " now has " + "enemyHealth remaning."
+      playerName + " attacked " + enemyNames + ". " + enemyNames + " now has " + "enemyHealth remaning."
     );
 
     // check enemy's health 
     if (enemyHealth <= 0) {
-      window.alert(enemyName + " has died!");
+      window.alert(enemyNames + " has died!");
     }
     else {
-      window.alert(enemyName + " still has " + enemyHealth + " health left.")
+      window.alert(enemyNames + " still has " + enemyHealth + " health left.")
     }
     // subtract value of 'enemyAttack' from the value of 'playerHealth' and use that result to update the value in the 'playerHealth' variable. 
     playerHealth = playerHealth - enemyAttack;
     // log a resulting message to the console so we know that it worked 
-    enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + "health-remaining."
+    enemyNames + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + "health-remaining."
 
-    console.log(enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining.");
+    console.log(enemyNames + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining.");
 
     // check players health 
     if (playerHealth <= 0) {
@@ -77,6 +98,6 @@ var fight = function () {
 
 
 
-
-
-fight();
+for(var i = 0; i <enemyNames.length; i++) {
+    fight(enemyNames[i]);
+}
