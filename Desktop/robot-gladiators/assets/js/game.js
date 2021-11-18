@@ -35,7 +35,17 @@ var fight = function (enemyName) {
       var promptFight = window.prompt("would you liket to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP'to choose");
       fight(enemyNames[i]);
     }
+
+    for (var i = 0; <enemyNames.length; i++) {
+      var pickedEnemyName = enemyNames[i];
+      enemyHeslth = 50;
+      fight(pickedEnemyName);
+    }
   
+    if (playerHealth <= 8){
+      window.alert(playerName + " has died ";)
+      break;
+    }
 
   // if player chooses to fight then fight  
   if (promptFight === "fight" || promptFight === "FIGHT") {
@@ -98,7 +108,7 @@ var fight = function (enemyName) {
 
 for (var i = 0; i < enemyNames.length; i++) {
   fight(enemyNames[i]);
-}
+};
 
 }
 
