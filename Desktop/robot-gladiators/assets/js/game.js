@@ -1,27 +1,21 @@
 // Game states 
 // win - player robot has defeated all enemy-robots 
-  // *fiht all enemy-robots 
-    // *defeat each enemy-robot 
-    // "lose" - player robots health is zero or less 
+// *fiht all enemy-robots 
+// *defeat each enemy-robot 
+// "lose" - player robots health is zero or less 
 var playerName = window.prompt("What is your robot's name?");
-
 var playerHealth = 100;
-
 var playerAttack = 10;
-
 var playerMoney = 10;
 
 var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
-
-
 var enemyHealth = 50;
-
 var enemyAttack = 12;
 
 console.log(enemyNames);
 console.log(enemyNames[0]);
 console.log(enemyNames[1]);
-console.log(enemyNames[2]); 
+console.log(enemyNames[2]);
 console.log(enemyNames.length);
 
 for(var i = 0; i < enemyNames.length; i++) {
@@ -31,13 +25,17 @@ for(var i = 0; i < enemyNames.length; i++) {
 }
 
 
-
+// while (playerHealth > 0 && enemyHealth > 0)
 
 var fight = function (enemyName) {
-  // alert player thst they are starting round 
-  window.alert("Welcome to Robot Gladiators!");
-
-  var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.");
+  // repeat and execute as long as enemy bo is alive
+  while (enemyHealth > 0) {
+    for (var i = 0; i < enemyNames.length; i++) {
+      debugger;
+      var promptFight = window.prompt("would you liket to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP'to choose");
+      fight(enemyNames[i]);
+    }
+  
 
   // if player chooses to fight then fight  
   if (promptFight === "fight" || promptFight === "FIGHT") {
@@ -84,8 +82,8 @@ var fight = function (enemyName) {
     // if no (flase), ask question again by running fight () again
     else {
       fight();
-    } 
-    
+    }
+
   } else {
     window.alert("You need to choose a valid option. Try again!");
   }
@@ -98,6 +96,8 @@ var fight = function (enemyName) {
 
 
 
-for(var i = 0; i <enemyNames.length; i++) {
-    fight(enemyNames[i]);
+for (var i = 0; i < enemyNames.length; i++) {
+  fight(enemyNames[i]);
+}
+
 }
